@@ -1,15 +1,16 @@
 {
-    "require": {
-        "behat/behat": "2.4.*@stable",
-		"behat/mink":                   "1.4.*",
-		"behat/mink-goutte-driver":     "*",
-		"behat/mink-selenium2-driver":  "*",
-		"claylo/selenium-server-standalone": "*",
-		"famelo/mink-extension":  "*"
-    },
+	"require": {
+		"behat/behat":"*@stable",
+			"behat/mink":"*",
+			"behat/mink-extension":"*",
+			"behat/mink-goutte-driver":"*",
+			"behat/mink-zombie-driver":"*",
+			"behat/mink-selenium2-driver":"*",
+			"claylo/selenium-server-standalone":"*"
+	},
 
-    "config": {
-        "bin-dir": "bin/"
-    }
+		"config": {
+			"bin-dir":"bin/"
+		}
 }
 

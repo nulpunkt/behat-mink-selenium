@@ -4,7 +4,7 @@ Feature: Search
   I need to be able to search for a word
 
   Scenario Outline: Searching for a page that does exist
-    Given I am on "http://ordbogen.com"
+    Given I am on "http://trunk.ordbogen.jsn.dev.ordbogen.com"
     When I fill in "word" with "<word>"
     And I press "Søg"
     Then I should see "<word>"

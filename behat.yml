@@ -2,15 +2,21 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       base_url: http://lunch-time/app_dev.php
-      goutte: ~
-      default_session: selenium2
-      browser_name: 'firefox'
-      selenium2:
-        capabilities: { "browser": "firefox", "version": "14" }
-
+      selenium2: ~
+      default_session: selenium2 
   paths:
     features:  features
     bootstrap: features/bootstrap
+
+headless:
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: http://lunch-time/app_dev.php
+      goutte: ~
+      default_session: goutte 
+  paths:
+    features:  features
+    bootstrap: features/headless_bootstrap
 
 annotations:
   paths:
